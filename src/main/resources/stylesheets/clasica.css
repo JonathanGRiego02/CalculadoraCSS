@@ -1,0 +1,81 @@
+GridPane {
+    -fx-background-color: #333333;
+    -fx-font-family: "monospace";
+    -fx-hgap: 1px;
+    -fx-vgap: 1px;
+}
+
+TextField {
+    -fx-text-fill: LightGray;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+}
+
+Button {
+    -fx-font-size: 16px;
+    -fx-background-radius: 0px;
+    -fx-background-insets: 0px;
+}
+
+Button:focused {
+    -fx-border-color: white;
+}
+
+Button:armed {
+    -fx-border-color: yellow;
+}
+
+#ceroButton, #unoButton, #dosButton, #tresButton, #cuatroButton, #cincoButton, #seisButton, #sieteButton, #ochoButton, #nueveButton, #puntoButton {
+    -fx-text-fill: white;
+    -fx-background-color: #a9a9a9;
+}
+
+#ceroButton:hover, #unoButton:hover, #dosButton:hover, #tresButton:hover, #cuatroButton:hover, #cincoButton:hover, #seisButton:hover, #sieteButton:hover, #ochoButton:hover, #nueveButton:hover, #puntoButton:hover {
+    -fx-text-fill: #333333;
+    -fx-background-color: white;
+}
+
+#ceroButton:pressed, #unoButton:pressed, #dosButton:pressed, #tresButton:pressed, #cuatroButton:pressed, #cincoButton:pressed, #seisButton:pressed, #sieteButton:pressed, #ochoButton:pressed, #nueveButton:pressed, #puntoButton:pressed {
+    -fx-text-fill: lightgray;
+    -fx-background-color: black;
+}
+
+#ceButton, #cButton {
+    -fx-text-fill: black;
+    -fx-background-color: #d3d3d3;
+}
+
+#ceButton:hover, #cButton:hover {
+    -fx-background-color: white;
+}
+
+#ceButton:pressed, #cButton:pressed {
+    -fx-text-fill: lightgray;
+    -fx-background-color: black;
+}
+
+#sumButton, #restaButton, #mulButton, #divButton {
+    -fx-text-fill: white;
+    -fx-background-color: orange;
+}
+
+#sumButton:hover, #restaButton:hover, #mulButton:hover, #divButton:hover {
+    -fx-background-color: darkorange;
+}
+
+#sumButton:hover:default, #restaButton:hover:default, #mulButton:hover:default, #divButton:hover:default {
+    -fx-background-color: red;
+}
+
+#sumButton:pressed, #restaButton:pressed, #mulButton:pressed, #divButton:pressed {
+    -fx-text-fill: orange;
+    -fx-background-color: white;
+}
+
+#igualButton {
+    -fx-background-color: orangered;
+}

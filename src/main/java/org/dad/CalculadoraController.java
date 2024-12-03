@@ -42,6 +42,9 @@ public class CalculadoraController implements Initializable {
   private Button restaButton;
 
   @FXML
+  private Button sumButton;
+
+  @FXML
   private Button ceroButton;
 
 
@@ -80,9 +83,6 @@ public class CalculadoraController implements Initializable {
 
   @FXML
   private GridPane root;
-
-  @FXML
-  private Button sumButton;
 
   // Getters y Setters
 
@@ -288,6 +288,20 @@ public class CalculadoraController implements Initializable {
     pantallaP.set(mi_calculadora.getPantalla());
   }
 
+  @FXML
+  void onModernaAction(ActionEvent event) {
+    // quitamos la hoja de estilos actual y ponemos la hoja de estilos moderna.css
+    root.getStylesheets().clear();
+    root.getStylesheets().add(getClass().getResource("/stylesheets/moderna.css").toExternalForm());
+  }
+
+  @FXML
+  void onClasicaAction(ActionEvent event) {
+    // quitamos la hoja de estilos actual y ponemos la hoja de estilos clasica.css
+    root.getStylesheets().clear();
+    root.getStylesheets().add(getClass().getResource("/stylesheets/clasica.css").toExternalForm());
+  }
+
   public CalculadoraController() {
     try {
       FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/CalculadoraView.fxml"));
@@ -303,9 +317,8 @@ public class CalculadoraController implements Initializable {
   public void initialize(URL location, ResourceBundle resources) {
     // Binds
     pantallaTextField.textProperty().bind(pantallaP);
-
     // Iniciar el valor de pantallaP con el valor inicial de la calculadora
     pantallaP.set(mi_calculadora.getPantalla());
-
+    root.getStylesheets().add(getClass().getResource("/stylesheets/clasica.css").toExternalForm());
   }
 }

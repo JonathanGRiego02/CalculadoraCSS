@@ -1,0 +1,83 @@
+GridPane {
+    -fx-background-color: black;
+    -fx-font-family: "monospace";
+    -fx-hgap: 5px;
+    -fx-vgap: 5px;
+    -fx-padding: 5px;
+}
+
+TextField {
+    -fx-text-fill: lightgray;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+}
+
+Button {
+    -fx-font-size: 16px;
+    -fx-background-radius: 5em;
+    -fx-background-insets: 0px;
+    -fx-border-radius: 5em;
+}
+
+Button:focused {
+    -fx-border-color: white;
+}
+
+Button:armed {
+    -fx-border-color: yellow;
+}
+
+#ceroButton, #unoButton, #dosButton, #tresButton, #cuatroButton, #cincoButton, #seisButton, #sieteButton, #ochoButton, #nueveButton, #puntoButton {
+    -fx-text-fill: white;
+    -fx-background-color: darkgray;
+}
+
+#ceroButton:hover, #unoButton:hover, #dosButton:hover, #tresButton:hover, #cuatroButton:hover, #cincoButton:hover, #seisButton:hover, #sieteButton:hover, #ochoButton:hover, #nueveButton:hover, #puntoButton:hover{
+    -fx-text-fill: darkgray;
+    -fx-background-color: white;
+}
+
+.numButton:pressed {
+    -fx-text-fill: lightgray;
+    -fx-background-color: black;
+}
+
+#ceButton, #cButton {
+    -fx-text-fill: black;
+    -fx-background-color: lightgray;
+}
+
+#ceButton:hover , #cButton:hover {
+    -fx-background-color: white;
+}
+
+#ceButton:pressed , #cButton:pressed{
+    -fx-text-fill: lightgray;
+    -fx-background-color: black;
+}
+
+#sumButton, #restaButton, #mulButton, #divButton {
+    -fx-text-fill: white;
+    -fx-background-color: orange;
+}
+
+#sumButton:hover, #restaButton:hover, #mulButton:hover, #divButton:hover {
+    -fx-background-color: darkorange;
+}
+
+#sumButton:hover:default, #restaButton:hover:default, #mulButton:hover:default, #divButton:hover:default {
+    -fx-background-color: red;
+}
+
+#sumButton:pressed, #restaButton:pressed, #mulButton:pressed, #divButton:pressed {
+    -fx-text-fill: orange;
+    -fx-background-color: white;
+}
+
+#igualButton{
+    -fx-background-color: orangered;
+}
